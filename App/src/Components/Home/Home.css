@@ -1,0 +1,117 @@
+/* General layout */
+.file {
+  background: linear-gradient(to right, #7b6ee9, #d16ba5);
+  min-height: 100vh;
+  padding-top: 130px; /* Leave space for the fixed header */
+  font-family: Arial, sans-serif;
+}
+
+/* Fixed Header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #7b6ee9, #d16ba5);
+  z-index: 999;
+  padding: 20px;
+  text-align: center;
+}
+
+.fixed-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Sticky input form */
+.create_form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.create_form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.create_form button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #200000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Task list styling */
+.todo-list {
+  margin-top: 70px;
+  padding-top: 120px;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.todo-item {
+  background: #eee;
+  margin: 10px auto;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bullet {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.task-text {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: gray;
+}
+
+.todo-item button {
+  margin-left: 15px;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 3px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Logout button */
+.logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+   font-size: 18px;   
+  font-weight: bold;
+  background-color: #ebe6e6;
+  border: 1px solid #000;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
